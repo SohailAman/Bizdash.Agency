@@ -21,6 +21,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
 .greenTxt {
     color: var(--color-green);
 }
@@ -234,19 +240,19 @@ body {
     content: none !important;
 }
 
-.benSec .swiper .slide1 {
+.slide1 {
     background-color: var(--color-green);
     height: 45vh;
 }
 
-.benSec .swiper .slideGrey {
+.slideGrey {
     background-color: var(--bg-card);
     height: 45vh;
     position: relative;
     overflow: hidden;
 }
 
-.benSec .swiper .slideGrey::after {
+.slideGrey::after {
     content: "";
     background-color: var(--color-green);
     width: 80px;
@@ -258,7 +264,7 @@ body {
     transform: rotate(45deg);
 }
 
-.benSec .swiper .icon-slide {
+.icon-slide {
     width: 90px;
 }
 
@@ -270,7 +276,7 @@ body {
     color: var(--text-dull);
 }
 
-.supportSce .innerCont .smallPara {
+.smallPara {
     font-size: 16.5px;
     color: var(--text-dull);
 }
@@ -475,4 +481,14 @@ body {
     object-fit: cover;
     object-position: 75% 50%;
     max-width: 100%;
+}
+
+/* trainSec */
+
+.trainSec h5 {
+    font-size: 18px;
+}
+
+.trainSec p {
+    font-size: 14.5px;
 }
