@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+    --color-white: #ffffff;
+    --color-primary: #005aa1;
+    --color-green: #00a650;
+    --color-dull: #b7b7b7;
+    --color-border-dull: #d1d1d1;
+    --text-dull: #444444;
+    --text-dull2: #696969;
+    --bg-dull: #dedede;
+    --bg-card: #f3f3f3;
+    --nav-border: #8e8e8e;
+    --tab-bg: #fafafa;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.greenTxt {
+    color: var(--color-green);
+}
+
+.blueTxt {
+    color: var(--color-primary);
+}
+
+/* navbar */
+.navbar {
+    background-color: var(--color-primary);
+}
+
+.navbar .navbar-brand {
+    color: var(--color-white);
+    font-weight: bolder;
+    font-size: 22px;
+
+}
+
+.navbar .nav-link {
+    color: var(--color-dull);
+    margin: 0 10px;
+}
+
+.navbar .nav-link.active {
+    color: var(--color-white);
+    position: relative;
+}
+
+.navbar .nav-link.active::before {
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: -15px;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-white);
+
+}
+
+/* HeroSec */
+
+.heroSec {
+    background-color: var(--color-primary);
+    height: 90vh;
+}
+
+.heroSec .innerCont h1 {
+    font-size: 95px;
+    font-weight: normal;
+}
+
+.heroSec .innerCont p {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+
+
+.heroSec .innerCont .btn_grp .btnLight {
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    padding: 10px 15px;
+}
+
+.heroSec .innerCont .btn_grp .btnGreen {
+    background-color: var(--color-green);
+    border: none;
+    padding: 12px 25px;
+
+}
+
+/* Info */
+.agencyInfo {
+    padding: 9rem 0;
+    font-size: 55px;
+    color: var(--text-dull);
+    font-weight: 500;
+}
+
+/* Detail */
+
+.detailSec {
+    background-color: var(--bg-dull);
+    padding-bottom: 16rem !important;
+}
+
+.detailSec p {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.detailSec .smallTxt {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.detailSec .boldTxt {
+    font-size: 20px;
+}
+
+.detailSec ul li {
+    list-style-type: square;
+    color: var(--color-primary);
+}
+
+.detailSec ul span {
+    color: var(--text-dull);
+    font-size: 20px;
+}
+
+/* imgSec */
+
+.imgSec img {
+    margin-top: -15rem;
+}
+
+.imgSec h1 {
+    font-weight: 500;
+    font-size: 46px;
+}
+
+.imgSec p {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+/* stepsSec */
+.stepsSec {
+    background-color: var(--color-green);
+}
+
+.stepsSec .topTxt {
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.stepsSec .colCard {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-border-dull);
+    color: var(--text-dull2);
+    transition: all 0.3s;
+}
+
+.stepsSec .colCard:hover {
+    border-color: var(--color-white);
+    transition: all 0.3s;
+}
+
+.stepsSec .colCard:hover .icon {
+    border-color: var(--color-green);
+    transition: all 0.3s;
+}
+
+.stepsSec .row .icon {
+    border: 2px solid var(--color-dull);
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+    transition: all 0.3s;
+}
+
+.stepsSec .colCard p {
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* Benefits */
+
+.benSec .swiper-cont {
+    margin-left: 100px;
+}
+
+.benSec .swiper-cont {
+    overflow-x: hidden !important;
+}
+
+.benSec .swiper {
+    overflow: visible !important;
+}
+
+.benSec .swiper .swiper-button-prev,
+.benSec .swiper .swiper-button-next {
+    top: -90px !important;
+    right: 60px !important;
+    transition: all 0.4s;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    left: auto !important;
+    font-size: 16px;
+}
+
+
+.benSec .swiper .swiper-button-disabled {
+    opacity: 0 !important;
+    transition: all 0.4s;
+}
+
+.benSec .swiper .swiper-button-prev:after,
+.benSec .swiper .swiper-button-next:after {
+    content: none !important;
+}
+
+.benSec .swiper .slide1 {
+    background-color: var(--color-green);
+    height: 45vh;
+}
+
+.benSec .swiper .slideGrey {
+    background-color: var(--bg-card);
+    height: 45vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.benSec .swiper .slideGrey::after {
+    content: "";
+    background-color: var(--color-green);
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -32px;
+    right: -22px;
+    transform: rotate(45deg);
+}
+
+.benSec .swiper .icon-slide {
+    width: 90px;
+}
+
+/* supportSce */
+
+.supportSce .innerCont h1 {
+    font-weight: 500;
+    margin-left: 0;
+    color: var(--text-dull);
+}
+
+.supportSce .innerCont .smallPara {
+    font-size: 16.5px;
+    color: var(--text-dull);
+}
+
+.supportSce .innerCont .boldTxt {
+    font-weight: 500;
+    color: var(--text-dull);
+    font-size: 19px;
+}
+
+/* Client */
+
+.clientSec {
+    color: var(--text-dull);
+}
+
+.clientSec .txtHead h1 {
+    font-weight: 500;
+}
+
+
+.clientSec .txtHead p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.clientSec .clientTabs .pillBlue {
+    background-color: var(--color-green);
+    overflow: hidden;
+}
+
+.clientSec .clientTabs .pillGrey {
+    background-color: var(--bg-card);
+    position: relative;
+    overflow: hidden;
+}
+
+.clientSec .clientTabs .pillGrey::after {
+    content: "";
+    background-color: var(--color-green);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+    right: -12px;
+    transform: rotate(45deg);
+}
+
+.clientSec .clientTabs .clientPill img {
+    height: 40px;
+}
+
+.clientSec .clientTabs .pillGrey span {
+    color: var(--text-dull);
+}
+
+/* <!-- Hospitality --> */
+
+.hostSec .leftCol h1 {
+    font-weight: 500;
+}
+
+.hostSec .leftCol img {
+    height: 90px;
+}
+
+.hostSec .leftCol .smallTxt {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hostSec .leftCol p {
+    font-size: 17.5px;
+}
+
+.hostSec .leftCol .smallTxt .greenTxt {
+    font-weight: 400;
+}
+
+.hostSec .rightCol .img-bg {
+    position: relative;
+    background-color: var(--color-green);
+}
+
+.hostSec .rightCol .img-bg .img-cont {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.hostSec .rightCol .img-bg .img-cont img {
+    margin-top: -40px !important;
+    padding-bottom: 20px;
+}
+
+/* services */
+.servSec {
+    background: linear-gradient(to right, #eee6dfc2, #eee6dfc2), url(../assets/how-to-product.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 33%;
+}
+
+.servSec .innerserv h1 {
+    font-size: 42px;
+}
+
+.servSec .listContainer ul li {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* model */
+.modelSec .innerModel h1 {
+    font-size: 38px;
+    color: var(--text-dull);
+}
+
+.modelSec .innerModel p {
+    font-size: 18px;
+    color: var(--text-dull);
+}
+
+.modelSec .nav .active {
+    background-color: var(--color-green) !important;
+    color: var(--color-white) !important;
+}
+
+.modelSec .nav button {
+    color: var(--text-dull);
+    width: 70% !important;
+    border-radius: 0 !important;
+    text-align: start !important;
+    margin: 5px auto;
+    background-color: var(--tab-bg) !important;
+    border: 1px solid var(--nav-border) !important;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    line-height: 19px;
+}
+
+.modelSec .nav button:hover {
+    color: var(--text-dull);
+}
+
+.modelSec .innertabs h1 {
+    font-size: 22px;
+}
+
+.modelSec .tab_img img {
+    object-fit: cover;
+    object-position: left !important;
+    height: 40vh !important;
+
+}
+
+.modelSec .secod_Col {
+    background-color: var(--tab-bg) !important;
+    border: 1px solid var(--nav-border) !important;
+    padding: 20px 10px;
+}
+
+.modelSec .innertabs h1 {
+    color: var(--color-green);
+    font-size: 26px;
+}
+
+.modelSec .innertabs p {
+    color: var(--text-dull);
+    font-size: 18px;
+}
+
+.modelSec .tab2::after {
+    content: "";
+    background-color: var(--color-green);
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    right: -12px;
+}
