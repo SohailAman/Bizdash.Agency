@@ -455,3 +455,24 @@ body {
     bottom: -10px;
     right: -12px;
 }
+
+/* reasonSec */
+.reasonSec {
+    background-color: var(--color-green);
+}
+
+.reasonSec .textCol ul li {
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.reasonSec .textCol h2 {
+    font-weight: 500;
+}
+
+.reasonSec img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 75% 50%;
+    max-width: 100%;
+}
