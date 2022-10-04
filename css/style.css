@@ -496,12 +496,12 @@ a {
 }
 
 .trainSec p {
-    font-size: 14.5px;
+    font-size: 14px;
 }
 
 .trainSec .slide1,
 .trainSec .slideGrey {
-    height: 58vh !important;
+    height: 61vh !important;
 }
 
 /* FAQ */
