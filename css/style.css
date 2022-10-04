@@ -501,7 +501,15 @@ a {
 
 .trainSec .slide1,
 .trainSec .slideGrey {
-    height: 61vh !important;
+    height: 67vh !important;
+}
+
+@media (min-width:1210px) {
+
+    .trainSec .slide1,
+    .trainSec .slideGrey {
+        height: 57vh !important;
+    }
 }
 
 /* FAQ */
