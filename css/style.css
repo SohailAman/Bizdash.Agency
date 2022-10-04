@@ -58,10 +58,8 @@ button:focus {
     background-color: var(--color-primary);
 }
 
-.navbar .navbar-brand {
-    color: var(--color-white);
-    font-weight: bolder;
-    font-size: 22px;
+.navbar .navbar-brand img {
+    height: 34px;
 }
 
 .navbar .nav-link {
@@ -124,10 +122,37 @@ button:focus {
 
 .btnGreen {
     background-color: var(--color-green);
-    border: none;
+    border: 1px solid var(--color-green);
     padding: 12px 25px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .5s;
 }
 
+.btnGreen::after {
+    content: "";
+    background-color: var(--sec-bg);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.btnGreen:hover {
+    color: var(--color-green) !important;
+    transition: all .4s;
+    transition-delay: .1s;
+}
+
+.btnGreen:hover:after {
+    transform: scale(18);
+    transition: all .5s;
+}
 
 /* Info */
 
@@ -600,6 +625,7 @@ button:focus {
     object-position: 96% 50% !important;
 }
 
+
 .reasonSec img {
     height: 100%;
     object-fit: cover;
@@ -863,6 +889,10 @@ button:focus {
     .benSec .swiper .swiper-button-next {
         top: -40px !important;
     }
+
+    .faqSec .faqPill {
+        height: 11vh;
+    }
 }
 
 @media (max-width:992px) {
@@ -896,6 +926,19 @@ button:focus {
     .faqPill_row {
         display: flex;
         justify-content: center !important;
+    }
+
+    .reasonSec .imgCol2 {
+        order: 2;
+    }
+
+    .reasonSec img {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .faqSec .faqPill {
+        height: 13vh;
     }
 }
 
@@ -966,6 +1009,15 @@ button:focus {
 }
 
 @media (max-width:640px) {
+    .navbar .navbar-nav {
+        margin-top: 14px !important;
+    }
+
+    .navbar .nav-link {
+        padding: 3px 0 !important;
+        margin: 0 20px !important;
+    }
+
     .benSec .swiper-cont {
         margin-left: 40px !important;
         margin-right: 40px !important;
@@ -980,19 +1032,40 @@ button:focus {
         padding: 12px 23px !important;
         font-size: 14px !important;
     }
+
+    .benSec .swiper>.swiper-wrapper {
+        margin-top: 1rem !important;
+        margin-bottom: 4rem !important;
+    }
+
+    .benSec .swiper .swiper-button-prev,
+    .benSec .swiper .swiper-button-next {
+        top: auto !important;
+        bottom: -60px;
+    }
+
+    .faqPill_row .faqPill {
+        height: 10vh !important;
+        padding-right: 18px !important;
+        padding-left: 18px !important;
+    }
 }
 
 @media (max-width:590px) {
+    .br-1 {
+        display: none !important;
+    }
+
     .heroSec .innerCont h1 {
-        font-size: 46px !important;
+        font-size: 44px !important;
     }
 
     .heroSec .innerCont p {
-        font-size: 22px !important;
+        font-size: 20px !important;
     }
 
     .agencyInfo p {
-        font-size: 27px !important;
+        font-size: 24px !important;
     }
 
     .detailSec .boldTxt {
@@ -1009,6 +1082,11 @@ button:focus {
 
     .imgSec p {
         font-size: 20px !important;
+    }
+
+    .supportSce .innerCont {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 
     .stepsSec .topTxt {
@@ -1042,20 +1120,48 @@ button:focus {
     }
 
     .imgSec img {
-        margin-top: -8rem !important;
+        margin-top: -5rem !important;
     }
 
     .detailSec {
-        padding-bottom: 9rem !important;
+        padding-bottom: 5rem !important;
     }
+
+    .servSec .listContainer,
+    .clientSec .clientTabs {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .servSec .listContainer .col-lg-6.col-md-10.px-4 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .clientSec .hostSec .rightCol,
+    .clientSec .hostSec {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .servSec .listContainer ul li {
+        margin-bottom: 14px !important;
+    }
+
+    .modelSec .innertabs h1 {
+        font-size: 24px !important;
+    }
+
 }
 
 @media (max-width:480px) {
     .heroSec .innerCont h1 {
-        font-size: 35px !important;
+        font-size: 32px !important;
     }
 
     .heroSec .innerCont p {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
         font-size: 18px !important;
     }
 
@@ -1070,13 +1176,31 @@ button:focus {
         margin: 0 8px !important;
     }
 
+    .agencyInfo {
+        padding: 3.5rem 0 !important;
+    }
+
     .agencyInfo p {
-        font-size: 21px !important;
+        font-size: 22px !important;
+    }
+
+    .detailSec {
+        padding-top: 2rem !important;
     }
 
     .detailSec h2 {
-        font-size: 23px !important;
+        font-size: 22px !important;
     }
+
+    .detailSec .row.mx-0.mt-5.pt-4 {
+        margin-top: 1rem !important;
+    }
+
+    .detailSec ul li {
+        margin-bottom: 8px !important;
+        padding-left: 1px !important;
+    }
+
 
     .detailSec .smallTxt {
         font-size: 17px !important;
@@ -1102,12 +1226,25 @@ button:focus {
         font-size: 14px !important;
     }
 
+    .modelSec .innertabs h1 {
+        font-size: 22px !important;
+    }
+
     .modelSec .innerModel h1 {
         font-size: 23px !important;
     }
 
     .reasonSec .textCol h2 {
         font-size: 20px !important;
+    }
+
+    .reasonSec .textCol {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .trySec p {
+        font-size: 17px !important;
     }
 }
 
