@@ -398,12 +398,12 @@ a {
 
 /* model */
 .modelSec .innerModel h1 {
-    font-size: 38px;
+    font-size: 40px;
     color: var(--text-dull);
 }
 
 .modelSec .innerModel p {
-    font-size: 18px;
+    font-size: 22px;
     color: var(--text-dull);
 }
 
@@ -414,7 +414,7 @@ a {
 
 .modelSec .nav button {
     color: var(--text-dull);
-    width: 70% !important;
+    width: 100% !important;
     border-radius: 0 !important;
     text-align: start !important;
     margin: 5px auto;
@@ -422,7 +422,7 @@ a {
     border: 1px solid var(--nav-border) !important;
     position: relative;
     overflow: hidden;
-    padding: 15px;
+    padding: 15px 25px;
     line-height: 19px;
 }
 
@@ -473,6 +473,12 @@ a {
     background-color: var(--color-green);
 }
 
+.reasonSec .imgCol {
+    background: url(../assets/blog-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .reasonSec .textCol ul li {
     line-height: 22px;
     font-size: 14px;
@@ -480,6 +486,12 @@ a {
 
 .reasonSec .textCol h2 {
     font-weight: 500;
+}
+
+.reasonSec .imgCol .img1 {
+    height: 80% !important;
+    object-position: 96% 50% !important;
+
 }
 
 .reasonSec img {
