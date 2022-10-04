@@ -248,12 +248,12 @@ a {
 
 .slide1 {
     background-color: var(--color-green);
-    height: 45vh !important;
+    height: 53vh !important;
 }
 
 .slideGrey {
     background-color: var(--bg-card);
-    height: 45vh !important;
+    height: 53vh !important;
     position: relative;
     overflow: hidden;
 }
@@ -501,7 +501,7 @@ a {
 
 .trainSec .slide1,
 .trainSec .slideGrey {
-    height: 50vh !important;
+    height: 58vh !important;
 }
 
 /* FAQ */
