@@ -504,7 +504,7 @@ a {
     height: 67vh !important;
 }
 
-@media (min-width:1210px) {
+@media (min-width:1440px) {
 
     .trainSec .slide1,
     .trainSec .slideGrey {
