@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('http://fonts.cdnfonts.com/css/new-york-font?styles=134346');
 
 :root {
     --color-white: #ffffff;
@@ -33,6 +34,15 @@ a {
     outline: none;
 }
 
+button {
+    outline: none !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
 .greenTxt {
     color: var(--color-green);
 }
@@ -41,7 +51,9 @@ a {
     color: var(--color-primary);
 }
 
+
 /* navbar */
+
 .navbar {
     background-color: var(--color-primary);
 }
@@ -50,7 +62,6 @@ a {
     color: var(--color-white);
     font-weight: bolder;
     font-size: 22px;
-
 }
 
 .navbar .nav-link {
@@ -61,6 +72,16 @@ a {
 .navbar .nav-link.active {
     color: var(--color-white);
     position: relative;
+}
+
+.navbar .navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar .navbar-toggler .bi-list {
+    color: var(--color-white) !important;
+    font-size: 22px;
 }
 
 .navbar .nav-link.active::before {
@@ -75,8 +96,8 @@ a {
 
 .navbar .nav-link:hover {
     color: var(--color-white);
-
 }
+
 
 /* HeroSec */
 
@@ -95,8 +116,6 @@ a {
     font-weight: 300;
 }
 
-
-
 .heroSec .innerCont .btn_grp .btnLight {
     background-color: transparent;
     border: 1px solid var(--color-white);
@@ -107,16 +126,18 @@ a {
     background-color: var(--color-green);
     border: none;
     padding: 12px 25px;
-
 }
 
+
 /* Info */
+
 .agencyInfo {
-    padding: 9rem 0;
+    padding: 5rem 0;
     font-size: 55px;
     color: var(--text-dull);
     font-weight: 500;
 }
+
 
 /* Detail */
 
@@ -125,8 +146,13 @@ a {
     padding-bottom: 16rem !important;
 }
 
-.detailSec p {
-    font-size: 35px;
+
+/* #middletxt {
+    font-size: 25px;
+} */
+
+.detailSec h2 {
+    font-size: 43px;
     font-weight: 500;
 }
 
@@ -142,12 +168,19 @@ a {
 .detailSec ul li {
     list-style-type: square;
     color: var(--color-primary);
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+.detailSec ul li.list-style-0 {
+    list-style: none;
 }
 
 .detailSec ul span {
     color: var(--text-dull);
     font-size: 20px;
 }
+
 
 /* imgSec */
 
@@ -165,7 +198,9 @@ a {
     font-size: 22px;
 }
 
+
 /* stepsSec */
+
 .stepsSec {
     background-color: var(--color-green);
 }
@@ -207,6 +242,7 @@ a {
     font-weight: 400;
 }
 
+
 /* Benefits */
 
 .benSec .swiper-cont {
@@ -221,7 +257,19 @@ a {
     overflow: visible !important;
 }
 
-.benSec .swiper .swiper-button-prev,
+.benSec .swiper .swiper-button-prev {
+    right: 110px !important;
+    top: -90px !important;
+    transition: all 0.4s;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    left: auto !important;
+    font-size: 16px;
+}
+
 .benSec .swiper .swiper-button-next {
     top: -90px !important;
     right: 60px !important;
@@ -234,7 +282,6 @@ a {
     left: auto !important;
     font-size: 16px;
 }
-
 
 .benSec .swiper .swiper-button-disabled {
     opacity: 0 !important;
@@ -268,11 +315,31 @@ a {
     bottom: -32px;
     right: -22px;
     transform: rotate(45deg);
+    z-index: -1;
+    transition: all .5s;
+}
+
+.slideGrey:hover::after {
+    transform: rotate(45deg) scale(13);
+    border-radius: 0;
+    transition: all .5s;
+}
+
+.slideGrey p {
+    transition: all .4s;
+    transition-delay: .1s;
+}
+
+.slideGrey:hover>p {
+    color: var(--color-white) !important;
+    transition: all .4s;
+    transition-delay: .1s;
 }
 
 .icon-slide {
     width: 90px;
 }
+
 
 /* supportSce */
 
@@ -293,6 +360,7 @@ a {
     font-size: 19px;
 }
 
+
 /* Client */
 
 .clientSec {
@@ -303,21 +371,29 @@ a {
     font-weight: 500;
 }
 
-
 .clientSec .txtHead p {
     font-weight: 400;
     font-size: 20px;
 }
 
-.clientSec .clientTabs .pillBlue {
+.clientSec .clientTabs button {
+    text-align: start !important;
+}
+
+.clientSec .clientTabs .active.pillGrey {
     background-color: var(--color-green);
     overflow: hidden;
+}
+
+.clientSec .clientTabs .active.pillGrey span {
+    color: var(--color-white) !important;
 }
 
 .clientSec .clientTabs .pillGrey {
     background-color: var(--bg-card);
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .clientSec .clientTabs .pillGrey::after {
@@ -329,7 +405,13 @@ a {
     position: absolute;
     bottom: -25px;
     right: -12px;
-    transform: rotate(45deg);
+    z-index: -1;
+    transition: all .5s;
+}
+
+.clientSec .clientTabs .pillGrey:hover::after {
+    transform: scale(11);
+    transition: all .5s;
 }
 
 .clientSec .clientTabs .clientPill img {
@@ -338,6 +420,14 @@ a {
 
 .clientSec .clientTabs .pillGrey span {
     color: var(--text-dull);
+    transition: all .4s;
+    transition-delay: .1s;
+}
+
+.clientSec .clientTabs .pillGrey:hover span {
+    color: var(--color-white);
+    transition: all .4s;
+    transition-delay: .1s;
 }
 
 /* <!-- Hospitality --> */
@@ -378,7 +468,9 @@ a {
     padding-bottom: 20px;
 }
 
+
 /* services */
+
 .servSec {
     background: linear-gradient(to right, #eee6dfc2, #eee6dfc2), url(../assets/how-to-product.jpg);
     background-repeat: no-repeat;
@@ -396,7 +488,9 @@ a {
     font-size: 18px;
 }
 
+
 /* model */
+
 .modelSec .innerModel h1 {
     font-size: 40px;
     color: var(--text-dull);
@@ -412,8 +506,7 @@ a {
     color: var(--color-white) !important;
 }
 
-.modelSec .nav button {
-    color: var(--text-dull);
+.modelSec .nav-link {
     width: 100% !important;
     border-radius: 0 !important;
     text-align: start !important;
@@ -424,13 +517,19 @@ a {
     overflow: hidden;
     padding: 15px 25px;
     line-height: 19px;
+    color: var(--text-dull);
+    z-index: 1;
+    transition: all .5s;
 }
 
-.modelSec .nav button:hover {
-    color: var(--text-dull);
+.modelSec .nav-link:hover {
+    color: var(--color-white) !important;
+    transition: all .4s;
+    transition-delay: .1s;
 }
 
 .modelSec .innertabs h1 {
+    transition: all .5s;
     font-size: 22px;
 }
 
@@ -438,7 +537,6 @@ a {
     object-fit: cover;
     object-position: left !important;
     height: 40vh !important;
-
 }
 
 .modelSec .secod_Col {
@@ -457,7 +555,7 @@ a {
     font-size: 18px;
 }
 
-.modelSec .tab2::after {
+.modelSec .navtabs_btns .nav-link::after {
     content: "";
     background-color: var(--color-green);
     width: 40px;
@@ -466,9 +564,18 @@ a {
     position: absolute;
     bottom: -10px;
     right: -12px;
+    z-index: -1;
+    transition: all .5s;
 }
 
+.modelSec .navtabs_btns .nav-link:hover:after {
+    transform: scale(15);
+}
+
+
+
 /* reasonSec */
+
 .reasonSec {
     background-color: var(--color-green);
 }
@@ -491,7 +598,6 @@ a {
 .reasonSec .imgCol .img1 {
     height: 80% !important;
     object-position: 96% 50% !important;
-
 }
 
 .reasonSec img {
@@ -501,18 +607,28 @@ a {
     max-width: 100%;
 }
 
+
 /* trainSec */
 
 .trainSec h5 {
     font-size: 18px;
+    transition: all .4s;
+    transition-delay: .1s;
 }
 
 .trainSec p {
     font-size: 14px;
 }
 
+.trainSec .slideGrey:hover h5 {
+    color: var(--color-white);
+    transition: all .4s;
+    transition-delay: .1s;
+}
+
 .trainSec .slide1,
 .trainSec .slideGrey {
+    z-index: 1;
     height: 67vh !important;
 }
 
@@ -524,14 +640,28 @@ a {
     }
 }
 
+
 /* FAQ */
 
 .faqSec .faqPill {
     border: 1px solid var(--color-green);
     height: 9vh;
+    border-radius: 0 !important;
     transition: all 0.4s;
 }
 
+.faqSec .accordion-button::after {
+    content: none !important;
+}
+
+.faqSec .accordion-button:not(.collapsed) {
+    background-color: var(--color-green) !important;
+    transition: all 0.4s;
+}
+
+
+.faqSec .accordion-button:not(.collapsed) i,
+.faqSec .accordion-button:not(.collapsed) span,
 .faqSec .faqPill:hover>span {
     color: var(--color-white);
     transition: all 0.5s;
@@ -544,13 +674,19 @@ a {
 
 .faqSec .faqPill span {
     color: var(--text-dull);
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .faqSec .faqPill i {
+    color: var(--text-dull);
+    transition: all 0.4s;
+}
+
+.faqSec .faqPill:hover i {
     color: var(--color-white);
     transition: all 0.4s;
 }
+
 
 /* Trial */
 
@@ -561,6 +697,10 @@ a {
 .trySec p {
     font-weight: 500;
     font-size: 20px;
+}
+
+.trySec .metrics {
+    font-family: 'New York Font', sans-serif;
 }
 
 /* contactSec */
@@ -589,7 +729,6 @@ a {
     color: var(--color-white);
 }
 
-
 .btnGreen-outline {
     background-color: var(--color-white);
     color: var(--color-green);
@@ -609,7 +748,6 @@ a {
 
 .contactSec .rightInfoCol a {
     color: var(--text-dull);
-
 }
 
 .contactSec .rightInfoCol .icon-grp i {
@@ -631,7 +769,9 @@ a {
     transition: all .3s;
 }
 
+
 /* footer */
+
 .footer {
     background-color: var(--color-primary);
 }
@@ -676,4 +816,387 @@ a {
 
 .footer .copyright {
     font-size: 16px;
+}
+
+@media (max-width:1440px) {
+
+    .benSec .swiper .swiper-button-prev,
+    .benSec .swiper .swiper-button-next {
+        top: -60px !important;
+    }
+}
+
+@media (max-width:1200px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0 !important;
+    }
+
+    .heroSec .innerCont h1 {
+        font-size: 80px !important;
+    }
+
+    .heroSec .innerCont p {
+        font-size: 40px !important;
+    }
+
+    .agencyInfo {
+        font-size: 48px !important;
+    }
+
+    .detailSec .smallTxt {
+        font-size: 27px !important;
+    }
+
+    .imgSec img {
+        width: 100% !important;
+    }
+
+    .colCard {
+        margin: 10px !important;
+    }
+
+    .benSec .swiper>.swiper-wrapper {
+        margin-top: 6rem !important;
+    }
+
+    .benSec .swiper .swiper-button-prev,
+    .benSec .swiper .swiper-button-next {
+        top: -40px !important;
+    }
+}
+
+@media (max-width:992px) {
+    .heroSec .innerCont h1 {
+        font-size: 72px !important;
+    }
+
+    .heroSec .innerCont p {
+        font-size: 36px !important;
+    }
+
+    .agencyInfo {
+        font-size: 43px !important;
+    }
+
+
+    .navtabs_btns {
+        padding: 0 !important;
+    }
+
+    .navtabs_content {
+        padding: 0 !important;
+        margin: 10px 0 !important;
+    }
+
+    .inner_clientTabs {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .faqPill_row {
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width:768px) {
+    .benSec .swiper-cont {
+        margin-left: 60px !important;
+    }
+
+    .heroSec .innerCont h1 {
+        font-size: 55px !important;
+    }
+
+    .heroSec .innerCont p {
+        font-size: 27px !important;
+    }
+
+    .agencyInfo p {
+        font-size: 33px !important;
+    }
+
+    .detailSec .smallTxt {
+        font-size: 21px !important;
+    }
+
+    .detailSec h2 {
+        font-size: 27px !important;
+    }
+
+    .imgSec h1 {
+        font-size: 39px !important;
+    }
+
+    .imgSec p {
+        font-size: 22px !important;
+    }
+
+    .stepsSec .topTxt {
+        font-size: 26px !important;
+    }
+
+    .stepsSec .colCard p {
+        font-size: 15px !important;
+    }
+
+    .clientSec .txtHead p {
+        font-size: 15px !important;
+    }
+
+    .modelSec .innerModel h1 {
+        font-size: 29px !important;
+    }
+
+    .modelSec .innerModel p {
+        font-size: 17px !important;
+    }
+
+    .footer p {
+        font-size: 16px !important;
+    }
+
+    .primary_col h3 {
+        font-size: 22px !important;
+    }
+
+    .colCard {
+        margin: 10px 0 !important;
+    }
+}
+
+@media (max-width:640px) {
+    .benSec .swiper-cont {
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+    }
+
+    .heroSec .innerCont .btn_grp .btnLight {
+        padding: 10px 11px !important;
+        font-size: 14px !important;
+    }
+
+    .btnGreen {
+        padding: 12px 23px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width:590px) {
+    .heroSec .innerCont h1 {
+        font-size: 46px !important;
+    }
+
+    .heroSec .innerCont p {
+        font-size: 22px !important;
+    }
+
+    .agencyInfo p {
+        font-size: 27px !important;
+    }
+
+    .detailSec .boldTxt {
+        font-size: 18px !important;
+    }
+
+    .detailSec ul span {
+        font-size: 17px !important;
+    }
+
+    .imgSec h1 {
+        font-size: 36px !important;
+    }
+
+    .imgSec p {
+        font-size: 20px !important;
+    }
+
+    .stepsSec .topTxt {
+        font-size: 23px !important;
+    }
+
+    .servSec .innerserv h1 {
+        font-size: 30px !important;
+    }
+
+    .servSec .listContainer ul li {
+        font-size: 16px !important;
+    }
+
+    .trainSec .slide1,
+    .trainSec .slideGrey {
+        z-index: 1;
+        height: 45vh !important;
+    }
+
+    .smallPara {
+        font-size: 14.5px !important;
+    }
+
+    .faqPill_row .faqPill {
+        font-size: 14px !important;
+    }
+
+    .trySec p {
+        font-size: 18px !important;
+    }
+
+    .imgSec img {
+        margin-top: -8rem !important;
+    }
+
+    .detailSec {
+        padding-bottom: 9rem !important;
+    }
+}
+
+@media (max-width:480px) {
+    .heroSec .innerCont h1 {
+        font-size: 35px !important;
+    }
+
+    .heroSec .innerCont p {
+        font-size: 18px !important;
+    }
+
+    .heroSec .innerCont .btn_grp .btnLight {
+        padding: 10px 11px !important;
+        font-size: 12px !important;
+    }
+
+    .btnGreen {
+        padding: 12px 23px !important;
+        font-size: 12px !important;
+        margin: 0 8px !important;
+    }
+
+    .agencyInfo p {
+        font-size: 21px !important;
+    }
+
+    .detailSec h2 {
+        font-size: 23px !important;
+    }
+
+    .detailSec .smallTxt {
+        font-size: 17px !important;
+    }
+
+    .imgSec h1 {
+        font-size: 29px !important;
+    }
+
+    .imgSec p {
+        font-size: 17px !important;
+    }
+
+    .servSec .innerserv h1 {
+        font-size: 25px !important;
+    }
+
+    .servSec .listContainer ul li {
+        font-size: 14px !important;
+    }
+
+    .modelSec .innerModel p {
+        font-size: 14px !important;
+    }
+
+    .modelSec .innerModel h1 {
+        font-size: 23px !important;
+    }
+
+    .reasonSec .textCol h2 {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width:350px) {
+    .heroSec .innerCont h1 {
+        font-size: 30px !important;
+    }
+
+    .heroSec .innerCont p {
+        font-size: 15px !important;
+    }
+
+    .btnGreen {
+        padding: 12px 42px !important;
+        margin: 13px 8px !important;
+    }
+
+    .agencyInfo p {
+        font-size: 16px !important;
+    }
+
+    .detailSec h2 {
+        font-size: 16.5px !important;
+    }
+
+    .imgSec h1 {
+        font-size: 21px !important;
+    }
+
+    .imgSec p {
+        font-size: 13px !important;
+    }
+
+    .stepsSec .topTxt {
+        font-size: 18px !important;
+    }
+
+    .supportSce .innerCont .boldTxt {
+        font-weight: 500;
+        color: var(--text-dull);
+        font-size: 16px;
+    }
+
+    .faqPill_row .faqPill {
+        font-size: 11px !important;
+    }
+
+    .trySec p {
+        font-size: 15px !important;
+    }
+
+    .trySec h1 {
+        font-size: 22px !important;
+    }
+
+    .contactSec .formCol textarea,
+    .contactSec .formCol input {
+        font-size: 12px !important;
+    }
+
+    .btnGreen-outline {
+        font-size: 14px !important;
+    }
+
+    .txt h5 {
+        font-size: 16px !important;
+    }
+
+    .contactSec .rightInfoCol a {
+        font-size: 14px !important;
+    }
+
+    .imgSec img {
+        margin-top: -6rem !important;
+    }
+
+    .primary_col h3 {
+        font-size: 17px !important;
+    }
+
+    .footer p {
+        font-size: 13px !important;
+    }
+
+    .footer a {
+        font-size: 15px !important;
+    }
+
+    .footer_input input {
+        font-size: 14px !important;
+    }
 }
