@@ -13,6 +13,7 @@
     --bg-card: #f3f3f3;
     --nav-border: #8e8e8e;
     --tab-bg: #fafafa;
+    --sec-bg: #ededed;
 }
 
 body {
@@ -25,6 +26,11 @@ h1,
 h2,
 h3 {
     font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
 }
 
 .greenTxt {
@@ -97,7 +103,7 @@ h3 {
     padding: 10px 15px;
 }
 
-.heroSec .innerCont .btn_grp .btnGreen {
+.btnGreen {
     background-color: var(--color-green);
     border: none;
     padding: 12px 25px;
@@ -242,12 +248,12 @@ h3 {
 
 .slide1 {
     background-color: var(--color-green);
-    height: 45vh;
+    height: 45vh !important;
 }
 
 .slideGrey {
     background-color: var(--bg-card);
-    height: 45vh;
+    height: 45vh !important;
     position: relative;
     overflow: hidden;
 }
@@ -491,4 +497,163 @@ h3 {
 
 .trainSec p {
     font-size: 14.5px;
+}
+
+.trainSec .slide1,
+.trainSec .slideGrey {
+    height: 50vh !important;
+}
+
+/* FAQ */
+
+.faqSec .faqPill {
+    border: 1px solid var(--color-green);
+    height: 9vh;
+    transition: all 0.4s;
+}
+
+.faqSec .faqPill:hover>span {
+    color: var(--color-white);
+    transition: all 0.5s;
+}
+
+.faqSec .faqPill:hover {
+    background-color: var(--color-green);
+    transition: all 0.4s;
+}
+
+.faqSec .faqPill span {
+    color: var(--text-dull);
+    transition: all 0.3s;
+}
+
+.faqSec .faqPill i {
+    color: var(--color-white);
+    transition: all 0.4s;
+}
+
+/* Trial */
+
+.trySec {
+    background-color: var(--sec-bg);
+}
+
+.trySec p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* contactSec */
+
+.contactSec .formCol {
+    background-color: var(--color-green);
+}
+
+.contactSec .formCol textarea,
+.contactSec .formCol input {
+    border-radius: 0;
+    border-color: var(--color-white);
+    background-color: var(--color-green);
+    padding: 12px 18px;
+    color: var(--color-white);
+    resize: none;
+}
+
+.contactSec .formCol textarea:focus,
+.contactSec .formCol input:focus {
+    box-shadow: none;
+}
+
+.contactSec .formCol textarea::placeholder,
+.contactSec .formCol input::placeholder {
+    color: var(--color-white);
+}
+
+
+.btnGreen-outline {
+    background-color: var(--color-white);
+    color: var(--color-green);
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+}
+
+.contactSec .rightInfoCol {
+    background-color: var(--sec-bg);
+    color: var(--text-dull);
+}
+
+.contactSec .rightInfoCol img {
+    height: 50px;
+}
+
+.contactSec .rightInfoCol a {
+    color: var(--text-dull);
+
+}
+
+.contactSec .rightInfoCol .icon-grp i {
+    font-size: 28px;
+    border: 3px solid var(--nav-border);
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav-border);
+    transition: all .3s;
+}
+
+.contactSec .rightInfoCol .icon-grp i:hover {
+    color: var(--color-white);
+    border-color: var(--color-white);
+    transition: all .3s;
+}
+
+/* footer */
+.footer {
+    background-color: var(--color-primary);
+}
+
+.footer p {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.footer a {
+    font-weight: 300;
+}
+
+.footer .row .row a {
+    line-height: 30px;
+}
+
+.footer input {
+    border-radius: 0;
+    border: 1px solid var(--color-border-dull);
+    background-color: var(--color-green);
+    border-right: 0;
+    color: var(--color-white);
+}
+
+.footer input::placeholder {
+    color: var(--color-white);
+}
+
+.footer input:focus {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    box-shadow: var(--color-green);
+}
+
+.footer .input-group-text {
+    border-radius: 0;
+    border: 1px solid var(--color-border-dull) !important;
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+.footer .copyright {
+    font-size: 16px;
 }
