@@ -1104,11 +1104,15 @@ button:focus {
     .trainSec .slide1,
     .trainSec .slideGrey {
         z-index: 1;
-        height: 45vh !important;
+        height: 55vh !important;
     }
 
     .smallPara {
         font-size: 14.5px !important;
+    }
+
+    .faqPill_row .accordion-body {
+        font-size: 12px !important;
     }
 
     .faqPill_row .faqPill {
@@ -1152,6 +1156,24 @@ button:focus {
         font-size: 24px !important;
     }
 
+    .supportSce .innerCont .boldTxt {
+        font-weight: normal !important;
+    }
+
+    .footer a {
+        display: block;
+    }
+
+    .footer .newsHead {
+        padding-top: 2rem !important;
+        padding-bottom: 1rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .footer .bottomTxt p,
+    .footer .bottomTxt a {
+        font-size: 14px !important;
+    }
 }
 
 @media (max-width:480px) {
@@ -1243,8 +1265,16 @@ button:focus {
         padding-right: 20px !important;
     }
 
+    .trySec h1 {
+        font-size: 25px !important;
+    }
+
     .trySec p {
         font-size: 17px !important;
+    }
+
+    .faqSec .accordion-item {
+        margin-bottom: 16px !important;
     }
 }
 
