@@ -28,4 +28,26 @@ var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
         },
     },
-}); 
+});
+
+// Swiper article-detail
+
+
+var mySwiperInfo = new Swiper(".mySwiperInfo", {
+    loop: true,
+    speed: 900,
+    slidesPerView: 2,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }, breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+    },
+});
