@@ -1371,10 +1371,6 @@ button:focus {
     height: 89vh !important;
 }
 
-.herosec_hom .innerhomSec {
-    padding-top: 150px !important;
-}
-
 .herosec_hom .innerhomSec h2 {
     color: var(--color-white);
     font-weight: 400 !important;
@@ -1641,7 +1637,7 @@ button:focus {
         top: auto !important;
     }
     .innerenjoyAgency {
-        margin-top: 350px !important;
+        margin-top: 565px !important;
     }
     .bark {
         display: none !important;
@@ -1816,7 +1812,7 @@ button:focus {
         padding-top: 0px !important;
     }
     .innerenjoyAgency h2 {
-        margin-top: 266px !important;
+        margin-top: 273px !important;
     }
     .businesshassles .innerhassles h1 {
         line-height: 35px !important;
@@ -1937,6 +1933,9 @@ button:focus {
     }
     .getInTouch .rightInfoCol a {
         font-size: 15px !important;
+    }
+    .businesshassles .hassleslist ul li {
+        margin-bottom: 9px !important;
     }
 }
 
@@ -2216,13 +2215,13 @@ button:focus {
         font-size: 27px !important;
     }
     .businesshassles .innerhassles p {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
     .hassleslist ul li {
         font-size: 12px !important;
     }
     .innersuties h2 {
-        font-size: 19px !important;
+        font-size: 20px !important;
     }
     .innersuties .bark {
         display: none !important;
@@ -2231,7 +2230,8 @@ button:focus {
         font-size: 13px !important;
     }
     .Agencythatsuties .cardimgdiv p {
-        font-size: 14px !important;
+        font-size: 18px !important;
+        padding-top: 9px !important;
     }
     .frombussines .innerfrombussines ul li {
         padding-bottom: 15px;
@@ -2239,13 +2239,13 @@ button:focus {
         color: var(--text-dull);
     }
     .innerenjoyAgency {
-        margin-top: 218px !important;
+        margin-top: 260px !important;
     }
 }
 
 @media(max-width:420px) {
     .herosec_hom .innerhomSec h2 {
-        font-size: 25px !important;
+        font-size: 27px !important;
     }
     .btn_grp .btnLight {
         font-size: 12px !important;
@@ -2255,16 +2255,19 @@ button:focus {
     }
     .businesshassles .innerhassles h1 {
         line-height: 35px !important;
-        font-size: 24px !important;
+        font-size: 26px !important;
     }
     .businesshassles .innerhassles p {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .innerenjoyAgency h2 {
-        font-size: 20px !important;
+        font-size: 25px !important;
     }
     .enjoyAgency .innerenjoyAgency p {
-        font-size: 13px !important;
+        font-size: 17px !important;
+    }
+    .herosec_hom {
+        height: 60vh !important;
     }
 }
 
@@ -2281,28 +2284,28 @@ button:focus {
     }
     .businesshassles .innerhassles h1 {
         line-height: 31px !important;
-        font-size: 21px !important;
+        font-size: 24px !important;
     }
     .businesshassles .innerhassles p {
-        font-size: 11px !important;
-    }
-    .hassleslist ul li {
-        font-size: 11px !important;
-    }
-    .innersuties h2 {
         font-size: 16px !important;
     }
+    .hassleslist ul li {
+        font-size: 17px !important;
+    }
+    .innersuties h2 {
+        font-size: 21px !important;
+    }
     .Agencythatsuties .innersuties p {
-        font-size: 11px !important;
+        font-size: 14px !important;
     }
     .Agencythatsuties .cardimgdiv p {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .innerfrombussines h2 {
-        font-size: 19px !important;
+        font-size: 22px !important;
     }
     .frombussines .innerfrombussines ul li {
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -2315,10 +2318,7 @@ button:focus {
         margin-top: 10px !important;
     }
     .businesshassles .innerhassles h1 {
-        font-size: 20px !important;
-    }
-    .businesshassles .innerhassles h1 {
-        font-size: 18px !important;
+        font-size: 21px !important;
     }
     .businesshassles {
         padding: 31px 0 !important;
