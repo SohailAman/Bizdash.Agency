@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url('http://fonts.cdnfonts.com/css/new-york-font?styles=134346');
-
 :root {
     --color-white: #ffffff;
     --color-primary: #005aa1;
@@ -1498,19 +1497,16 @@ button:focus {
 /* Media Queries */
 
 @media (min-width:1440px) {
-
     .trainSec .slide1,
     .trainSec .slideGrey {
         height: 57vh !important;
     }
-
     .frombussines .innerfrombussines::after {
         height: 77vh !important;
     }
 }
 
 @media (max-width:1440px) {
-
     .benSec .swiper .swiper-button-prev,
     .benSec .swiper .swiper-button-next {
         top: -60px !important;
@@ -1521,40 +1517,31 @@ button:focus {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0 !important;
     }
-
     .heroSec .innerCont h1 {
         font-size: 70px !important;
     }
-
     .heroSec .innerCont p {
         font-size: 40px !important;
     }
-
     .agencyInfo {
         font-size: 48px !important;
     }
-
     .detailSec .smallTxt {
         font-size: 27px !important;
     }
-
     .imgSec img {
         width: 100% !important;
     }
-
     .colCard {
         margin: 10px !important;
     }
-
     .benSec .swiper>.swiper-wrapper {
         margin-top: 6rem !important;
     }
-
     .benSec .swiper .swiper-button-prev,
     .benSec .swiper .swiper-button-next {
         top: -40px !important;
     }
-
     .faqSec .faqPill {
         height: 11vh;
     }
@@ -1568,96 +1555,75 @@ button:focus {
     .heroSec .innerCont h1 {
         font-size: 72px !important;
     }
-
     .heroSec .innerCont p {
         font-size: 36px !important;
     }
-
     .agencyInfo {
         font-size: 43px !important;
     }
-
     .navtabs_btns {
         padding: 0 !important;
     }
-
     .navtabs_content {
         padding: 0 !important;
         margin: 10px 0 !important;
     }
-
     .inner_clientTabs {
         display: flex;
         justify-content: center !important;
     }
-
     .faqPill_row {
         display: flex;
         justify-content: center !important;
     }
-
     .reasonSec .imgCol2 {
         order: 2;
     }
-
     .reasonSec img {
         height: auto !important;
         width: 100% !important;
     }
-
     .faqSec .faqPill {
         height: 13vh;
     }
-
     /* Opportunity */
     .middleSec .middlcolOne h3 {
         font-size: 29px !important;
     }
-
     .middleSec .middlcolOne p {
         font-size: 14px !important;
     }
-
     .middleSec .middlcolOne a {
         font-size: 14px !important;
     }
-
     /* ---- */
     .lawofAgency .colone_text p {
         padding: 0px !important;
     }
-
     .lawofAgency .colone_text h2 {
         padding: 0px !important;
     }
-
     /* ---------- */
     .herosec_hom .innerhomSec h2 {
         font-size: 36px !important;
     }
-
     .businesshassles .innerhassles h1 {
         font-size: 40px !important;
         line-height: 55px !important;
     }
-
     .businesshassles .mainyourniche {
         margin-top: 22px !important;
     }
-
     .innersuties h2 {
         font-size: 22px !important;
     }
-
     .Agencythatsuties .innersuties p {
         font-size: 14px !important;
     }
-
     .frombussines .innerfromsmall {
         padding: 0 !important;
         position: relative !important;
     }
-
     .frombussines .innerfrombussines::after {
         content: "";
         background-image: url(../assets/office.jpg) !important;
@@ -1670,11 +1636,9 @@ button:focus {
         z-index: 0;
         top: auto !important;
     }
-
     .innerenjoyAgency {
         margin-top: 565px !important;
     }
-
     .bark {
         display: none !important;
     }
@@ -1684,85 +1648,65 @@ button:focus {
     .benSec .swiper-cont {
         margin-left: 60px !important;
     }
-
     .heroSec .innerCont h1 {
         font-size: 55px !important;
     }
-
     .heroSec .innerCont p {
         font-size: 27px !important;
     }
-
     .agencyInfo p {
         font-size: 33px !important;
     }
-
     .detailSec .smallTxt {
         font-size: 21px !important;
     }
-
     .detailSec h2 {
         font-size: 27px !important;
     }
-
     .imgSec h1 {
         font-size: 39px !important;
     }
-
     .imgSec p {
         font-size: 22px !important;
     }
-
     .stepsSec .topTxt {
         font-size: 26px !important;
     }
-
     .stepsSec .colCard p {
         font-size: 15px !important;
     }
-
     .clientSec .txtHead p {
         font-size: 15px !important;
     }
-
     .modelSec .innerModel h1 {
         font-size: 29px !important;
     }
-
     .modelSec .innerModel p {
         font-size: 17px !important;
     }
-
     .footer a {
         display: block;
     }
-
     .footer p {
         font-size: 16px !important;
     }
-
     .primary_col h3 {
         font-size: 22px !important;
     }
-
     .colCard {
         margin: 10px 0 !important;
     }
-
     /* article-detail */
     .wholeAgencyInfo .InfoTopCont .img-Cont .imgTab p {
         font-size: 18px !important;
     }
-
     .wholeAgencyInfo .InfoTopCont .img-Cont .imgTab img {
         height: 30px !important;
     }
-
     .wholeAgencyInfo .InfoTopCont .wholeTxt p {
         line-height: 34px;
         font-size: 18px !important;
     }
-
     .wholeAgencyInfo .mySwiperInfo h2 {
         font-size: 20px !important;
     }
@@ -1772,38 +1716,31 @@ button:focus {
     .wholeAgencyInfo .InfoTopCont .img-Cont .imgTab .innerTab {
         margin-top: 20px !important;
     }
-
     .wholeAgencyInfo .InfoTopCont .img-Cont .innerImg::after {
         height: 80px;
         width: 80px;
         bottom: -40px;
         right: 35px;
     }
-
     .wholeAgencyInfo .InfoTopCont {
         padding-left: 18px !important;
         padding-right: 18px !important;
     }
-
     /* ---- */
     .sellYourAgency h2 {
         margin-bottom: 18px !important;
         font-size: 20px !important;
     }
-
     .sellYourAgency .listSec ul li {
         margin-bottom: 8px !important;
     }
-
     .sellYourAgency .listSec ul li span {
         font-size: 16px !important;
         line-height: 28px;
     }
-
     .sellYourAgency .ansCont .topMost h1 {
         font-size: 24px !important;
     }
-
     .footer p,
     .sellYourAgency p,
     .sellYourAgency .ansCont .topMost p {
@@ -1812,7 +1749,6 @@ button:focus {
         margin-top: .8rem !important;
         margin-bottom: .8rem !important;
     }
-
     .sellYourAgency .ansCont .row.mx-0.mt-5.pt-4 {
         padding-top: 0px !important;
         margin-top: 10px !important;
@@ -1823,76 +1759,61 @@ button:focus {
     .navbar .navbar-nav {
         margin-top: 14px !important;
     }
-
     .navbar .nav-link {
         padding: 3px 0 !important;
         margin: 0 20px !important;
     }
-
     .benSec .swiper-cont {
         margin-left: 40px !important;
         margin-right: 40px !important;
     }
-
     .btn_grp .btnLight {
         padding: 10px 11px !important;
         font-size: 14px !important;
     }
-
     .btnGreen {
         padding: 12px 23px !important;
         font-size: 14px !important;
     }
-
     .benSec .swiper>.swiper-wrapper {
         margin-top: 1rem !important;
         margin-bottom: 4rem !important;
     }
-
     .benSec .swiper .swiper-button-prev,
     .benSec .swiper .swiper-button-next {
         top: auto !important;
         bottom: -60px;
     }
-
     .faqPill_row .faqPill {
         height: 10vh !important;
         padding-right: 18px !important;
         padding-left: 18px !important;
     }
-
     .sellYourAgency .px-5.rightCol {
         padding-right: 1rem !important;
         padding-left: 1rem !important;
     }
-
     /* Opportunity */
     .middleSec .middlcolOne h3 {
         font-size: 26px !important;
     }
-
     .middleSec .middlcolOne p {
         line-height: 23px !important;
     }
-
     .middleSec .middlcolOne a {
         font-size: 13px !important;
     }
-
     .middleSec .middlcolOne {
         height: 65vh !important;
     }
-
     /* ------ */
     .lawofAgency {
         padding-bottom: 0px !important;
         padding-top: 0px !important;
     }
-
     .innerenjoyAgency h2 {
-        margin-top: 300px !important;
+        margin-top: 273px !important;
     }
-
     .businesshassles .innerhassles h1 {
         line-height: 35px !important;
     }
@@ -1902,130 +1823,101 @@ button:focus {
     .br-1 {
         display: none !important;
     }
-
     .heroSec .innerCont h1 {
         font-size: 44px !important;
     }
-
     .heroSec .innerCont p {
         font-size: 20px !important;
     }
-
     .agencyInfo p {
         font-size: 24px !important;
     }
-
     .detailSec .boldTxt {
         font-size: 18px !important;
     }
-
     .detailSec ul span {
         font-size: 17px !important;
     }
-
     .imgSec h1 {
         font-size: 36px !important;
     }
-
     .imgSec p {
         font-size: 20px !important;
     }
-
     .supportSce .innerCont {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
-
     .stepsSec .topTxt {
         font-size: 23px !important;
     }
-
     .servSec .innerserv h1 {
         font-size: 30px !important;
     }
-
     .servSec .listContainer ul li {
         font-size: 16px !important;
     }
-
     .trainSec .slide1,
     .trainSec .slideGrey {
         z-index: 1;
         height: 55vh !important;
     }
-
     .smallPara {
         font-size: 14.5px !important;
     }
-
     .faqPill_row .accordion-body {
         font-size: 12px !important;
     }
-
     .faqPill_row .faqPill {
         font-size: 14px !important;
     }
-
     .trySec p {
         font-size: 18px !important;
     }
-
     .imgSec img {
         margin-top: -5rem !important;
     }
-
     .detailSec {
         padding-bottom: 5rem !important;
     }
-
     .servSec .listContainer,
     .clientSec .clientTabs {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-
     .servSec .listContainer .col-lg-6.col-md-10.px-4 {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
-
     .clientSec .hostSec .rightCol,
     .clientSec .hostSec {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-
     .servSec .listContainer ul li {
         margin-bottom: 14px !important;
     }
-
     .modelSec .innertabs h1 {
         font-size: 24px !important;
     }
-
     .supportSce .innerCont .boldTxt {
         font-weight: normal !important;
     }
-
     .footer a {
         display: block;
     }
-
     .footer .newsHead {
         padding-top: 2rem !important;
         padding-bottom: 1rem !important;
         margin-bottom: 0 !important;
     }
-
     .footer img {
         width: 50% !important;
     }
-
     .footer .bottomTxt p,
     .footer .bottomTxt a {
         font-size: 14px !important;
     }
-
     /* # */
     .getInTouch .rightInfoCol .cont {
         padding-top: 0rem !important;
@@ -2033,19 +1925,15 @@ button:focus {
         margin-top: 0.5rem !important;
         margin-bottom: 0.9rem !important;
     }
-
     .getInTouch .rightInfoCol img {
         height: 38px !important;
     }
-
     .getInTouch .rightInfoCol h5 {
         font-size: 18px !important;
     }
-
     .getInTouch .rightInfoCol a {
         font-size: 15px !important;
     }
-
     .businesshassles .hassleslist ul li {
         margin-bottom: 9px !important;
     }
@@ -2055,102 +1943,79 @@ button:focus {
     .heroSec .innerCont h1 {
         font-size: 32px !important;
     }
-
     .heroSec .innerCont p {
         margin-top: 12px !important;
         margin-bottom: 12px !important;
         font-size: 18px !important;
     }
-
     .btn_grp .btnLight {
         padding: 10px 11px !important;
         font-size: 12px !important;
     }
-
     .btnGreen {
         padding: 12px 23px !important;
         font-size: 12px !important;
         margin: 0 8px !important;
     }
-
     .agencyInfo {
         padding: 3.5rem 0 !important;
     }
-
     .agencyInfo p {
         font-size: 22px !important;
     }
-
     .detailSec {
         padding-top: 2rem !important;
     }
-
     .detailSec h2 {
         font-size: 22px !important;
     }
-
     .detailSec .row.mx-0.mt-5.pt-4 {
         margin-top: 1rem !important;
     }
-
     .detailSec ul li {
         margin-bottom: 8px !important;
         padding-left: 1px !important;
     }
-
     .detailSec .smallTxt {
         font-size: 17px !important;
     }
-
     .imgSec h1 {
         font-size: 29px !important;
     }
-
     .imgSec p {
         font-size: 17px !important;
     }
-
     .servSec .innerserv h1 {
         font-size: 25px !important;
     }
-
     .servSec .listContainer ul li {
         font-size: 14px !important;
     }
-
     .modelSec .innerModel p {
         font-size: 14px !important;
     }
-
     .modelSec .innertabs h1 {
         font-size: 22px !important;
     }
-
     .modelSec .innerModel h1 {
         font-size: 23px !important;
     }
-
     .reasonSec .textCol h2 {
         font-size: 20px !important;
     }
-
     .reasonSec .textCol {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-
     .trySec h1 {
         font-size: 25px !important;
     }
-
     .trySec p {
         font-size: 17px !important;
     }
-
     .faqSec .accordion-item {
         margin-bottom: 16px !important;
     }
-
     /* -- */
     .wholeAgencyInfo .InfoTopCont .img-Cont .imgTab p {
         font-size: 15px !important;
@@ -2159,78 +2024,63 @@ button:focus {
         margin-left: 6px !important;
         margin-right: 6px !important;
     }
-
     .wholeAgencyInfo .InfoTopCont .img-Cont .imgTab .innerTab {
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
-
     .wholeAgencyInfo .InfoTopCont .img-Cont .innerImg::after {
         height: 60px;
         width: 60px;
         bottom: -30px;
         right: 25px;
     }
-
     .wholeAgencyInfo .InfoTopCont .wholeTxt p {
         line-height: 24px !important;
         font-size: 15px !important;
     }
-
     .wholeAgencyInfo .InfoTopCont .wholeTxt h3 {
         margin-top: 20px !important;
         margin-bottom: 12px !important;
         font-size: 17px !important;
     }
-
     .wholeAgencyInfo .InfoTopCont .commentCont h4.commentHead,
     .wholeAgencyInfo .mySwiperInfo h2 {
         font-size: 17px !important;
     }
-
     .wholeAgencyInfo .mySwiperInfo p {
         font-size: 15px !important;
     }
-
     .wholeAgencyInfo .mySwiperInfo .swiper-button-prev,
     .wholeAgencyInfo .mySwiperInfo .swiper-button-next {
         font-size: 18px !important;
         width: 30px !important;
         height: 20px !important;
     }
-
     .wholeAgencyInfo .InfoTopCont .commentCont .comment img {
         height: 60px;
     }
-
     .wholeAgencyInfo .InfoTopCont .commentCont h4.replyHead {
         font-size: 20px !important;
     }
-
     .col-lg-6.col-md-10.col-sm-12.my-3 {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-
     textarea::placeholder,
     input::placeholder {
         font-size: 12px !important;
     }
-
     /* ----- */
     .heroSec .inner_content h3 {
         font-size: 21px !important;
     }
-
     .heroSec .inner_content p {
         font-size: 13px !important;
     }
-
     /* ------------- */
     .lawofAgency .overlay_div .inneroverlay_div {
         padding: 0 6px !important;
     }
-
     .lawofAgency .innerlawAgency img {
         height: 65vh !important;
     }
@@ -2240,87 +2090,67 @@ button:focus {
     .heroSec .innerCont h1 {
         font-size: 30px !important;
     }
-
     .heroSec .innerCont p {
         font-size: 15px !important;
     }
-
     .btnGreen {
         padding: 12px 42px !important;
         margin: 13px 4px !important;
     }
-
     .agencyInfo p {
         font-size: 16px !important;
     }
-
     .detailSec h2 {
         font-size: 16.5px !important;
     }
-
     .imgSec h1 {
         font-size: 21px !important;
     }
-
     .imgSec p {
         font-size: 13px !important;
     }
-
     .stepsSec .topTxt {
         font-size: 18px !important;
     }
-
     .supportSce .innerCont .boldTxt {
         font-weight: 500;
         color: var(--text-dull);
         font-size: 16px;
     }
-
     .faqPill_row .faqPill {
         font-size: 11px !important;
     }
-
     .trySec p {
         font-size: 15px !important;
     }
-
     .trySec h1 {
         font-size: 22px !important;
     }
-
     .contactSec .formCol textarea,
     .contactSec .formCol input {
         font-size: 12px !important;
     }
-
     .btnGreen-outline {
         font-size: 14px !important;
     }
-
     .txt h5 {
         font-size: 16px !important;
     }
-
     .contactSec .rightInfoCol a {
         font-size: 14px !important;
     }
-
     .imgSec img {
         margin-top: -6rem !important;
     }
-
     .primary_col h3 {
         font-size: 17px !important;
     }
-
     .footer p {
         font-size: 13px !important;
     }
-
     .footer a {
         font-size: 15px !important;
     }
-
     .footer_input input {
         font-size: 14px !important;
     }
@@ -2330,45 +2160,35 @@ button:focus {
     .lawofAgency .overlay_div .inneroverlay_div h4 {
         font-size: 19px !important;
     }
-
     .lawofAgency .row .py-3 {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-
     .lawofAgency .overlay_div .inneroverlay_div p {
         font-size: 13px !important;
     }
-
     .lawofAgency .innerlawAgency::after {
         right: 3px !important;
         background-size: 150px !important;
     }
-
     .colone_text {
         padding-top: 70px !important;
     }
-
     .lawofAgency .overlay_div .inneroverlay_div {
         top: -50px !important;
     }
-
     .lawofAgency .colone_text h2 {
         font-size: 22px !important;
     }
-
     .lawofAgency .colone_text p {
         font-size: 15px !important;
     }
-
     .lawofAgency .lawinfoMain .firstinfo h4 {
         font-size: 20px !important;
     }
-
     .lawofAgency .lawinfoMain .firstinfo p {
         font-size: 14px !important;
     }
-
     .lawofAgency .lawinfoMain .firstinfo a {
         font-size: 14px !important;
     }
@@ -2378,11 +2198,9 @@ button:focus {
     .lawofAgency .overlay_div .inneroverlay_div h4 {
         font-size: 17px !important;
     }
-
     .lawofAgency .overlay_div .inneroverlay_div p {
         font-size: 12px !important;
     }
-
     .lawofAgency .innerlawAgency::after {
         width: 80px !important;
         height: 80px !important;
@@ -2393,42 +2211,33 @@ button:focus {
     .herosec_hom .innerhomSec h2 {
         font-size: 29px !important;
     }
-
     .businesshassles .innerhassles h1 {
         font-size: 27px !important;
     }
-
     .businesshassles .innerhassles p {
         font-size: 16px !important;
     }
-
     .hassleslist ul li {
         font-size: 12px !important;
     }
-
     .innersuties h2 {
         font-size: 20px !important;
     }
-
     .innersuties .bark {
         display: none !important;
     }
-
     .Agencythatsuties .innersuties p {
         font-size: 13px !important;
     }
-
     .Agencythatsuties .cardimgdiv p {
         font-size: 18px !important;
         padding-top: 9px !important;
     }
-
     .frombussines .innerfrombussines ul li {
         padding-bottom: 15px;
         font-size: 13px;
         color: var(--text-dull);
     }
-
     .innerenjoyAgency {
         margin-top: 260px !important;
     }
@@ -2438,32 +2247,25 @@ button:focus {
     .herosec_hom .innerhomSec h2 {
         font-size: 27px !important;
     }
-
     .btn_grp .btnLight {
         font-size: 12px !important;
     }
-
     .btnGreen {
         font-size: 12px !important;
     }
-
     .businesshassles .innerhassles h1 {
         line-height: 35px !important;
         font-size: 26px !important;
     }
-
     .businesshassles .innerhassles p {
         font-size: 14px !important;
     }
-
     .innerenjoyAgency h2 {
         font-size: 25px !important;
     }
-
     .enjoyAgency .innerenjoyAgency p {
         font-size: 17px !important;
     }
-
     .herosec_hom {
         height: 60vh !important;
     }
@@ -2471,47 +2273,37 @@ button:focus {
 
 @media(max-width:366px) {
     .herosec_hom .innerhomSec h2 {
-        font-size: 23px !important;
+        font-size: 22px !important;
     }
-
     .btnGreen {
         font-size: 11px !important;
     }
-
     .btn_grp .btnLight {
         padding: 11px 15px !important;
         font-size: 11px !important;
     }
-
     .businesshassles .innerhassles h1 {
         line-height: 31px !important;
         font-size: 24px !important;
     }
-
     .businesshassles .innerhassles p {
         font-size: 16px !important;
     }
-
     .hassleslist ul li {
         font-size: 17px !important;
     }
-
     .innersuties h2 {
         font-size: 21px !important;
     }
-
     .Agencythatsuties .innersuties p {
         font-size: 14px !important;
     }
-
     .Agencythatsuties .cardimgdiv p {
         font-size: 14px !important;
     }
-
     .innerfrombussines h2 {
         font-size: 22px !important;
     }
-
     .frombussines .innerfrombussines ul li {
         font-size: 16px !important;
     }
@@ -2521,16 +2313,13 @@ button:focus {
     .herosec_hom .innerhomSec h2 {
         font-size: 20px !important;
     }
-
     .btnGreen {
         padding: 12px 40px !important;
         margin-top: 10px !important;
     }
-
     .businesshassles .innerhassles h1 {
         font-size: 21px !important;
     }
-
     .businesshassles {
         padding: 31px 0 !important;
     }
